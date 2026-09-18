@@ -7,8 +7,9 @@ app.secret_key = "secret123"
 
 ## Create app Routes 
 @app.route("/")
+@app.route("/Home")
 def Home():
-    return render_template("index.html")
+    return render_template("Home.html")
 
 @app.route("/Login")
 def Login():
